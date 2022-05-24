@@ -17,17 +17,11 @@ Because PhysiCell makes extensive use of BioFVM, we suggest you also cite it:</p
 [2] A Ghaffarizadeh, SH Friedman, and P Macklin. BioFVM: an efficient parallelized diffusive transport solver for 3-D biological simulations, Bioinformatics 32(8): 1256-8, 2016. DOI: <a href="https://dx.doi.org/10.1093/bioinformatics/btv730">10.1093/bioinformatics/btv730</a></p>
 <p><strong>Please remember:</strong> if you use an additional addon, please make sure to cite it, too! This is critical for scientific rigor (to correctly document your method), reproducibility, and good academic behavior.</p>
 <p>We have started testing methods to auto-generate suggested citations for addons; see the auto-generated CITATION.txt when you run your model. This will be further developed in future versions of PhysiCell.</p>
-<div class="center">
-<hr />
-<hr />
-</div>
+
 <h1 id="sec:getting_started">Getting started: The Quickstart and your First Simulation</h1>
 <p>As of Version 1.2.2, every download of PhysiCell includes a <code>Quickstart.pdf</code> guide in the root directory. If you follow the instructions in that guide (along with instructions to set up your compiler and environment; see Section <a href="#sec:preparing_environment" data-reference-type="ref" data-reference="sec:preparing_environment">4</a>), you should be able to run and visualize your first PhysiCell simulation (heterogeneous tumor growth) in well under an hour.</p>
 <p>You should also watch the <a href="https://twitter.com/search?f=tweets&amp;vertical=default&amp;q=PhysiCell&amp;src=typd">#PhysiCell hashtag</a> on Twitter for updates on PhysiCell and new tricks, tips, and tutorials. Tutorials and other blog posts can be found at <a href="http://mathcancer.org/blog/physicell-tutorials/">http://MathCancer.org/blog/physicell-tutorials/</a>. See Section <a href="#sec:blog_and_help" data-reference-type="ref" data-reference="sec:blog_and_help">3</a> for resources for help, including support tickets and the PhysiCell blog.</p>
-<div class="center">
 <hr />
-<hr />
-</div>
 <h1 id="sec:blog_and_help">Further resources for help</h1>
 <p>The PhysiCell project posts tips and tutorials at its blog:</p>
 <div class="center">
@@ -706,15 +700,11 @@ get_default_microenvironment()-&gt;set_substrate_dirichlet_activation(1,true); <
 </div>
 <h3 id="sec:BioFVM_auto_release_at_death">Automated release of internalized substrates at cell death</h3>
 <p>Users can optionally set PhysiCell to release some or all of its internalized substrates at the end of cell death or at lysis. This functionality is accessed through the <code>Molecular</code> portion of the <code>Phenotype</code>. See Section <a href="#sec:phenotype_molecular" data-reference-type="ref" data-reference="sec:phenotype_molecular">11.8</a>.</p>
-<div class="center">
-<hr />
 <hr />
 </div>
 <h2 id="sec:BioFVM_further_reading">Other BioFVM resources</h2>
 <p>To learn more about using BioFVM, take a look at the tutorials at:</p>
 <p><a href="http://mathcancer.org/blog/biofvm-tutorials/">http://mathcancer.org/blog/biofvm-tutorials/</a></p>
-<div class="center">
-<hr />
 <hr />
 </div>
 <h1 id="sec:Cells">Cells </h1>
@@ -808,19 +798,12 @@ get_default_microenvironment()-&gt;set_substrate_dirichlet_activation(1,true); <
     
     void Cell::convert_to_cell_definition( Cell_Definition&amp; cd )
 };</code></pre>
-<div class="center">
-<hr />
-<hr />
-</div>
+
 <h2 id="sec:cell_other_member_data">Other member data</h2>
 <ol>
 <li><p><strong><code>bool is_out_of_domain</code></strong> is <code>true</code> if the cell is out of the simulation domain boundaries.</p></li>
 <li><p><strong><code>bool is_movable</code></strong> indicates whether the cell is in a static position. Set this to <code>true</code> if you would like PhysiCell to leave its position fixed and not evaluate the mechanics models for this cell. Note that it can still exert adhesive and repulsive forces on other cells.</p></li>
 </ol>
-<div class="center">
-<hr />
-<hr />
-</div>
 <h2 id="sec:cell_member_functions">Member functions</h2>
 <ol>
 <li><p><strong><code>void update_motility_vector( double dt_ )</code></strong> updates the cell’s motility vector, based on the following model:</p>
