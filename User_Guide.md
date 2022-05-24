@@ -755,12 +755,8 @@ the outer edges of the simulation domain. Note that without specifying
 Dirichlet conditions, BioFVM applies Neumann (no flux) conditions at the
 outer simulation boundaries.
 
-::: {.center}
 
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Biotransport equations {#sec:biotransport_equations}
 
@@ -770,9 +766,9 @@ of partial differential equations (PDEs):
 $$\frac{ \partial \boldsymbol{\rho}}{\partial t} 
 = \mathbf{D} \circ \nabla^2 \boldsymbol{\rho} - \boldsymbol{\lambda} \circ \boldsymbol{\rho} + \sum_i \delta \left( \mathbf{x} - \mathbf{x}_i \right) 
 \Bigl[ V_i \mathbf{S}_i \circ \left( \boldsymbol{\rho}^*_i - \boldsymbol{\rho} \right) - V_i \mathbf{U}_i \circ \boldsymbol{\rho} + \mathbf{E}_i \Bigr],$$
-where
 
-::: {.center}
+where
+```
           **Symbol**          Meaning                                             Dimensions
   --------------------------- --------------------------------------------------- ------------------
    $\rho\hspace{-5.1pt}\rho$  vector of substrate densities (or concentrations)   substance/volume
@@ -784,14 +780,22 @@ where
     $\boldsymbol{\rho}^*_i$   vector of cell $i$'s secretion saturations          substance/volume
         $\mathbf{U}_i$        vector of cell $i$'s uptake rates                   1/time
         $\mathbf{E}_i$        vector of cell $i$'s net export rates               substance/time
-:::
+ ```
+ 
+  |          Symbol          |      Meaning                                      |       Dimensions|
+  |--------------------------| --------------------------------------------------| ------------------|
+  | $\boldsymbol\rho$        |  vector of substrate densities (or concentrations)|   substance/volume|
+  |       $\mathbf{D}$       |  vector of diffusion coefficients                 |   length$^2$/time|
+  |  $\boldsymbol{\lambda}$  |  vector of decay rates                            |   1/time|
+  |           $V_i$          |  volume of cell $i$                               |   volume|
+  |      $\mathbf{x}_i$      |  cell $i$'s position (center)                     |   length|
+  |      $\mathbf{S}_i$      |  vector of cell $i$'s secretion rates             |   1/time|
+  |  $\boldsymbol{\rho}^*_i$ |  vector of cell $i$'s secretion saturations       |   substance/volume|
+  |      $\mathbf{U}_i$      |  vector of cell $i$'s uptake rates                |   1/time|
+  |      $\mathbf{E}_i$      |  vector of cell $i$'s net export rates            |   substance/time|
 
-::: {.center}
 
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Setting up and using the microenvironment {#sec:set_up_BioFVM}
 
