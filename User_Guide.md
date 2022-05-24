@@ -46,9 +46,7 @@ We have started testing methods to auto-generate suggested citations for
 addons; see the auto-generated CITATION.txt when you run your model.
 This will be further developed in future versions of PhysiCell.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -73,9 +71,7 @@ See Section [3](#sec:blog_and_help){reference-type="ref"
 reference="sec:blog_and_help"} for resources for help, including support
 tickets and the PhysiCell blog.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -102,9 +98,7 @@ Lastly, users can support help tickets at SourceForge:
 <https://sourceforge.net/p/physicell/tickets/>
 :::
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -133,9 +127,7 @@ Windows via mingw-w64 and on OSX using Homebrew) can be found at:
 Most linux users should already have a 64-bit `g++` environment
 installed by default.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -162,9 +154,7 @@ for more details. Also, if you have compiler crashes, see the FAQ
 
 <http://www.mathcancer.org/blog/common-problems-and-solutions/>
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -191,9 +181,7 @@ reference="sec:blog_and_help"}).
 Note that we do not update the Virtual Box distribution; you should
 download the latest PhysiCell version from inside your virtual machine.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -257,9 +245,7 @@ these skillsets, we recommend the following resources:
 7.  **The GNU Make Reference:**
     <https://www.gnu.org/software/make/manual/make.html>
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -283,9 +269,7 @@ The following websites are good references for `C++`:
 
 5.  **C++ section on CodeGuru:** <http://www.codeguru.com/cpp/cpp/>
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -315,9 +299,7 @@ If you use Matlab for visualization and/or postprocessing, we recommend:
     source alternative, have a look at this cross-platform package:\
     <https://www.gnu.org/software/octave/>
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -352,9 +334,7 @@ resources:
     We use the XFCE4 desktop environment in our virtual appliance, so
     this may be helpful.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -399,9 +379,7 @@ postprocessing and visualization:
         movie named out.avi, with a 8kbps variable bit rate and 24
         frames per second.)
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -497,9 +475,7 @@ file. See Section
 [13.3](#sec:XML_PhysiCell_structure){reference-type="ref"
 reference="sec:XML_PhysiCell_structure"}.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -582,9 +558,7 @@ More examples will be introduced on the PhysiCell blog. See Section
 [3](#sec:blog_and_help){reference-type="ref"
 reference="sec:blog_and_help"}.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -672,9 +646,7 @@ Here are the sample projects included as of Version 1.2.2:
 8.  **`template3D`** is the template for a 3-D project. See Section
     [6](#sec:templates){reference-type="ref" reference="sec:templates"}.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -699,9 +671,7 @@ To get a list of all sample projects:
 
 `make list-projects`
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -820,12 +790,7 @@ project via the C++ commands in Section
 [8.2.2](#sec:BioFVM_manual_setup_options){reference-type="ref"
 reference="sec:BioFVM_manual_setup_options"}.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Manual configuration via C++ function calls () {#sec:BioFVM_manual_setup_options}
 
@@ -913,12 +878,7 @@ name to "liver" and set up to 3D with Dirichlet conditions of oxygen =
     // track internalized oxygen 
     default_microenvironment_options.track_internalized_substrates_in_each_agent = true; 
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 #### Adding new diffusing substrates to the tissue environment {#sec:BioFVM_add_substrates}
 
@@ -976,12 +936,7 @@ the microenvironment. See Section
 [8.2.2.3](#sec:BioFVM_initialize){reference-type="ref"
 reference="sec:BioFVM_initialize"}
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 #### Initializing the BioFVM tissue microenvironment {#sec:BioFVM_initialize}
 
@@ -1057,12 +1012,7 @@ Note that the PhysiCell template projects and sample projects already
 include these critical setup commands. See Section
 [6](#sec:templates){reference-type="ref" reference="sec:templates"}.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Sampling the microenvironment {#sec:sample_microenvironment}
 
@@ -1124,12 +1074,7 @@ There are several functions to help sample the microenvironment at a
 cell's position. See Section [9](#sec:Cells){reference-type="ref"
 reference="sec:Cells"}.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Dirichlet conditions {#sec:Dirichlet}
 
@@ -1168,12 +1113,7 @@ are called Dirichlet nodes.) The relevant functions are:
 BioFVM applies these Dirichlet conditions every time it evaluates the
 diffusion solver.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Refined control of Dirichlet conditions {#sec:refined_Dirichlet_conditions}
 
@@ -1225,12 +1165,7 @@ Note that turning on or off a Dirichlet condition for a substrate
 applies it at all Dirichlet nodes for which
 `is_dirichlet_node(int voxel_index)` is `true`.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Setting the initial conditions {#sec:BioFVM_initial_conditions}
 
@@ -1269,12 +1204,7 @@ to its prior behavior: it uses
 `default_microenvironment_options.Dirichlet_condition_vector` as a
 sensible default for initial conditions.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Setting a non-uniform initial condition {#sec:BioFVM_nonuniform_initial_condition}
 
@@ -1314,12 +1244,7 @@ oxygen to $e^{-\frac{x}{100}}$, use code like this:
        return; 
     }
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Automated tracking of internalized substrates {#sec:BioFVM_internalization_tracking}
 
@@ -1362,12 +1287,7 @@ Note that users should *access* these internalized substrates via the
 [11.8](#sec:phenotype_molecular){reference-type="ref"
 reference="sec:phenotype_molecular"}.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Automated release of internalized substrates at cell death {#sec:BioFVM_auto_release_at_death}
 
@@ -1378,12 +1298,7 @@ functionality is accessed through the `Molecular` portion of the
 [11.8](#sec:phenotype_molecular){reference-type="ref"
 reference="sec:phenotype_molecular"}.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Other BioFVM resources {#sec:BioFVM_further_reading}
 
@@ -1391,12 +1306,7 @@ To learn more about using BioFVM, take a look at the tutorials at:
 
 <http://mathcancer.org/blog/biofvm-tutorials/>
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 # Cells  {#sec:Cells}
 
@@ -1549,12 +1459,7 @@ Here is how the `Cell` class is defined in `PhysiCell_cell.h`:
         void Cell::convert_to_cell_definition( Cell_Definition& cd )
     };
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Other member data {#sec:cell_other_member_data}
 
@@ -1567,12 +1472,7 @@ Here is how the `Cell` class is defined in `PhysiCell_cell.h`:
     cell. Note that it can still exert adhesive and repulsive forces on
     other cells.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Member functions {#sec:cell_member_functions}
 
@@ -1840,12 +1740,7 @@ Here is how the `Cell` class is defined in `PhysiCell_cell.h`:
     stem cell hierarchies, where you might "convert" a stem cell to a
     differentiated cell, each of which has been defined separately.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Other key functions {#sec:other_key_cell_functions}
 
@@ -1960,12 +1855,7 @@ members of the `Cell` class).
         int apop_index = pCD->phenotype.death.find_death_model_index( "apoptosis" ); 
         std::cout << pCD->phenotype.death.rates[ apop_index ] << std::endl; 
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Important classes (except Phenotype)
 
@@ -2196,12 +2086,7 @@ Here are the main data elements and member functions, in greater detail:
         Custom data (vector):
         0: home: [0,0,0] micron 
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Cell_Parameters {#sec:Cell_Parameters}
 
@@ -2298,12 +2183,7 @@ Here are the main data elements and member functions, in greater detail:
 
 12. **`Cell_Parameters()`** is the default constructor.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Cell_Functions {#sec:Cell_Functions}
 
@@ -2311,9 +2191,7 @@ This data structure attaches user-specified functions for key cell
 behaviors. Note that in PhysiCell, almost all functions that act on
 cells take the form
 
-::: {.center}
 `void function( Cell* pCell, Phenotype& phenotype, double dt )`.
-:::
 
 Ordinarily, `phenotype = pCell->phenotype`, but we allow these to be
 specified separately for cases where `pCell = NULL`.
@@ -2406,12 +2284,7 @@ Here are the member data and functions in greater detail:
 
 10. **`Cell_Functions()`** is the default constructor.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Cell_State {#sec:Cell_State}
 
@@ -2558,12 +2431,7 @@ Here are the member data and functions in greater detail:
 
 8.  **`Cell_Definition()`** is the default constructor.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 # Phenotype  {#sec:Phenotype}
 
@@ -2654,12 +2522,7 @@ In the Section [11](#sec:phenotype_details){reference-type="ref"
 reference="sec:phenotype_details"}, we give further details on the data
 elements within the `Phenotype` class.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Member functions  {#member-functions}
 
@@ -2681,12 +2544,7 @@ elements within the `Phenotype` class.
     nor used, because default constructors take care of this. The
     function will be deprecated.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 # Phenotype details {#sec:phenotype_details}
 
@@ -2715,12 +2573,7 @@ are connected into a directed graph by `Phase_Link`s (Section
 [11.1.2](#sec:Phase_Link){reference-type="ref"
 reference="sec:Phase_Link"}).
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Phase  {#sec:Phase}
 
@@ -2775,12 +2628,7 @@ Here is the formal class declaration:
     `code = 0`, `name = "unnamed"`, all flags to `false`, and the entry
     function to `NULL`.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Phase_Link  {#sec:Phase_Link}
 
@@ -2838,12 +2686,7 @@ Here is the formal class declaration:
 1.  **`Phase_Link()`** is the default constructor. It sets all indices
     to 0, all flags to `false`, and it sets `arrest_function = NULL`.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Cycle_Model  {#sec:Cycle_Model}
 
@@ -2991,12 +2834,7 @@ Here is the formal class declaration:
     a basic visual output of the cycle model. I recommend calling
     `display( std::cout )`.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Cycle_Data  {#sec:Cycle_Data}
 
@@ -3089,12 +2927,7 @@ Here is the formal class declaration:
     $$\frac{1}{\texttt{exit\_rate}(\texttt{phase\_index}) }$$ time in
     phase `phase_index`.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Cycle  {#sec:Cycle_Class}
 
@@ -3153,12 +2986,7 @@ Here is the formal class declaration:
 6.  **`void sync_to_cycle_model(Cycle_Model& cm)`** sets
     `pCycle_Model = &cm` and then overwrites `data` with `cm.data`.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Death models  {#sec:Death}
 
@@ -3174,12 +3002,7 @@ reference="sec:Death_Class"}) within the phenotype, similarly to `Cycle`
 (Section [11.1.5](#sec:Cycle_Class){reference-type="ref"
 reference="sec:Cycle_Class"}).
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Death_Parameters  {#sec:Death_Parameters}
 
@@ -3236,12 +3059,7 @@ Here is the formal class declaration:
     breast epithelium line (calibrated to MCF-10A measurements), as in
     [@ref:PhysiCell].
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Death  {#sec:Death_Class}
 
@@ -3345,12 +3163,7 @@ Here is the formal class declaration:
     reference) the\
     `Death_Parameters` for the current death model (if `dead == true`).
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Volume  {#sec:Volume}
 
@@ -3496,12 +3309,7 @@ Here is the class declaration:
         void update( Cell* pCell, Phenotype& phenotype, double dt );      
     };
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Member functions {#member-functions-8}
 
@@ -3515,12 +3323,7 @@ Here is the class declaration:
 3.  **`void multiply_by_ratio(double ratio)`** multiplies the volume,
     all sub-volumes, and the target volumes by `ratio`.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Geometry  {#sec:Geometry}
 
@@ -3573,12 +3376,7 @@ Here is the class definition in `PhysiCell_phenotype.h`:
         void update( Cell* pCell, Phenotype& phenotype, double dt );      
     };
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Member functions {#member-functions-9}
 
@@ -3611,12 +3409,7 @@ Here is the class definition in `PhysiCell_phenotype.h`:
     `nuclear_radius`, and `surface_area` according to
     `phenotype.volume`.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Mechanics  {#sec:Mechanics}
 
@@ -3679,12 +3472,7 @@ Here is the class definition in `PhysiCell_phenotype.h`:
         Mechanics();      
     };
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Member functions {#member-functions-10}
 
@@ -3719,12 +3507,7 @@ Here is the class definition in `PhysiCell_phenotype.h`:
     radius, but the absolute (dimensional) equilibrium spacing will vary
     in time even after setting the value with this function.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Motility  {#sec:Motility}
 
@@ -3786,12 +3569,7 @@ The main parameters are further defined and related in Section
 [11.6.2](#sec:motility_definitions){reference-type="ref"
 reference="sec:motility_definitions"}
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Member functions {#member-functions-11}
 
@@ -3801,12 +3579,7 @@ reference="sec:motility_definitions"}
     `is_motile = false`, `update_migration_bias_vector = NULL`, and
     `restrict_to_2D = false`.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Motility definitions {#sec:motility_definitions}
 
@@ -3821,12 +3594,7 @@ Section [9.2](#sec:cell_member_functions){reference-type="ref"
 reference="sec:cell_member_functions"} for more information on how the
 `Motility` class is used when updating a cell's velocity.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Secretion  {#sec:Secretion}
 
@@ -3879,12 +3647,7 @@ Here is the full class declaration:
         void scale_all_uptake_by_factor( double factor ); 
     };
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Member functions {#member-functions-12}
 
@@ -3928,12 +3691,7 @@ Here is the full class declaration:
 8.  **`void scale_all_uptake_by_factor(double factor)`** multiplies all
     the uptake rates by `factor`.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Molecular {#sec:phenotype_molecular}
 
@@ -4000,12 +3758,7 @@ Here is the full class definition:
             void sync_to_cell( Basic_Agent* pCell );        
     };
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Member functions {#sec:molecular_functions}
 
@@ -4024,12 +3777,7 @@ Here is the full class definition:
 4.  **`void sync_to_cell( Basic_Agent* pCell )`** sets the cell's
     internal pointers to this class's data structures.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 # Cell Containers {#sec:Cell_Container}
 
@@ -4101,12 +3849,7 @@ Here is an example use:
     Cell_Container* cell_container = create_cell_container_for_microenvironment(
         microenvironment, mechanics_voxel_size );
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 # PhysiCell Inputs
 
@@ -4189,12 +3932,7 @@ it all is based upon finding XML nodes relative to a supplied parent
     gets the string value of an XML node. (e.g.,
     `<bob units="none">is nice</bob>` returns ïs nice.̈)
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Passing XML options to PhysiCell {#sec:XML_options}
 
@@ -4272,12 +4010,7 @@ Lastly, we point out that the settings in the XML figuration files and
 the settings data structures will likely be expanded in the next several
 PhysiCell releases.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Member data
 
@@ -4315,12 +4048,7 @@ PhysiCell releases.
 10. **`bool enable_SVG_saves`** sets whether PhysiCell saves SVG
     snapshots.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Member functions {#member-functions-13}
 
@@ -4328,12 +4056,7 @@ PhysiCell releases.
     based upon the DOM that has previously been loaded with
     `load_PhysiCell_config_file`.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Structure of PhysiCell XML parameter files {#sec:XML_PhysiCell_structure}
 
@@ -4423,12 +4146,7 @@ The main groupings of settings are:
     [13.5](#sec:XML_user_parameters){reference-type="ref"
     reference="sec:XML_user_parameters"} for more details.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Microenvironment Setup {#sec:XML_microenvironment_setup}
 
@@ -4443,16 +4161,9 @@ to structure this block of XML.
 
 A detailed tutorial on these parameters is provided at:
 
-::: {.center}
 <http://mathcancer.org/blog/setting-up-the-physicell-microenvironment-with-xml>
-:::
-
-::: {.center}
 
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Defining chemical microenvironmental substrates as XML {#sec:XML_microenvironment_setup_XML_structure}
 
@@ -4641,12 +4352,7 @@ gradients, but do not track internalized substrates.
        </options>
     </microenvironment_setup>    
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Key microenvironment parsing functions {#sec:microenvironment_xml_parsing_functions}
 
@@ -4659,12 +4365,7 @@ gradients, but do not track internalized substrates.
 -   **`bool setup_microenvironment_from_XML( void )`** calls the prior
     function using `physicell_config_root`.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## User Parameters {#sec:XML_user_parameters}
 
@@ -4684,16 +4385,9 @@ data types.
 
 A detailed tutorial on these parameters is provided at:
 
-::: {.center}
 <http://www.mathcancer.org/blog/user-parameters-in-physicell/>
-:::
-
-::: {.center}
 
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Adding User Parameters to an XML Configuration File {#sec:XML_user_parameters_XML_structure}
 
@@ -4739,12 +4433,7 @@ stored in `parameters.ints`. All double parameters are stored in
 reference="sec:XML_user_parameters_data_types"} for technical details of
 these structures.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Accessing User Parameters in a Project {#sec:XML_user_parameters_reading_them}
 
@@ -4776,12 +4465,7 @@ To find the index of this parameter, and then access by index, use:
 
 The usage is similar for Boolean, string, and double parameters.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### User Parameters Technical Details {#sec:XML_user_parameters_data_types}
 
@@ -4871,12 +4555,7 @@ parameters:
        void read_from_pugixml( pugi::xml_node parent_node );
     }; 
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 # PhysiCell Outputs  {#sec:Outputs}
 
@@ -4900,12 +4579,7 @@ We also note that the SVG functions provided in PhysiCell
 (`./modules/PhysiCell_SVG.h`) can be compiled independently of
 PhysiCell.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### SVG functions  {#sec:SVG_functions}
 
@@ -5025,12 +4699,7 @@ note that the origin $(0,0)$ in an SVG file is in the upper left corner.
         Write_SVG_end(os); 
         os.close(); 
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Pathology functions  {#sec:Pathology_functions}
 
@@ -5096,12 +4765,7 @@ section. Here are the main functions:
 Future releases will include functions to color the background according
 to data values in the BioFVM microenvironment.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Cell coloring functions  {#sec:Pathology_Coloring}
 
@@ -5190,12 +4854,7 @@ The following cell coloring functions are provided in PhysiCell:
     G2 cells are colored yellow. (255,255,0).\
     G2/M and M cells are colored green. (0,255,0).
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Examples of custom cell coloring functions
 
@@ -5280,12 +4939,7 @@ For reference, we use a DAB absorb color of (25.50,53.55,73.95)
         return output; 
     }
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## MultiCellDS digital simulation snapshots 
 
@@ -5457,12 +5111,7 @@ Here is the overall structure of PhysiCell snapshot
             cycle model (as a PhysiCell::constants integer), and so
             forth.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Reading PhysiCell snapshots in MATLAB {#sec:matlab_data}
 
@@ -5526,12 +5175,7 @@ There are instructions there on how to get your xerxes JAR files in the
 path. Please note that xmlread is about one order of magnitude slower on
 Octave than in Matlab.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Other outputs 
 
@@ -5573,12 +5217,7 @@ All these initialization functions are included in the 2-D and 3-D
 project templates. See Section [6](#sec:templates){reference-type="ref"
 reference="sec:templates"}.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 # Key global data structures  {#sec:key_global_data}
 
@@ -5637,12 +5276,7 @@ structure:
 See Section [8.2](#sec:set_up_BioFVM){reference-type="ref"
 reference="sec:set_up_BioFVM"} for more details on these options.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## Default cell definition  {#sec:cell_definition_default}
 
@@ -5697,12 +5331,7 @@ reference="sec:other_key_cell_functions"}.)
 Users can modify `cell_defaults` at any time; the changes will only
 apply to cells created after that point in time.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## A list of all cells {#sec:All_Cells}
 
@@ -5723,12 +5352,7 @@ operation on all cells.
         std::cout << pC->ID << ": " << pC->phenotype.cycle.current_phase().name << std::endl; 
     }
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ## MultiCellDS options  {#sec:MultiCellDS_Options}
 
@@ -5770,12 +5394,7 @@ simulation snapshot, and are not needed for users. We define
 (currently unused) below. The other metadata elements (`spatial_units`,
 etc.) are as expected.
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Software metadata
 
@@ -5798,12 +5417,7 @@ etc.) are as expected.
         void insert_in_open_xml_pugi( pugi::xml_node& insert_here );         
     };
 
-::: {.center}
-
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-:::
 
 ### Citation metadata
 
@@ -5823,9 +5437,7 @@ etc.) are as expected.
         void insert_in_open_xml_pugi( pugi::xml_node& insert_here );    
     };
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -5851,9 +5463,7 @@ etc.) are as expected.
         void insert_in_open_xml_pugi( pugi::xml_node& insert_here );  
     };
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -5887,9 +5497,7 @@ Here is how that data structure is defined (with its default values):
 All plots are performed in the simulation units, so a font of height 200
 is 200 $\mu\textrm{m}$ tall.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6002,9 +5610,7 @@ Here is the list of all current constants (current as of Version 1.7.0):
 Notice in particular that cycle models under 100 denote live cells, and
 cycle models 100 or greater indicate dead cells.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6016,9 +5622,7 @@ As detailed in Section
 reference="sec:XML_user_parameters"}, PhysiCell has a global
 `User_Parameters` data struture called `parameters`.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6050,12 +5654,8 @@ Further details on the *biology* of this model (including details the
 placement of daughter cells and changes in cell volume) and reference
 parameter values can be found in [@ref:PhysiCell].
 
-::: {.mdframed}
-:::
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6083,12 +5683,8 @@ Further details on the *biology* of this model (including details the
 placement of daughter cells and changes in cell volume) and reference
 parameter values can be found in [@ref:PhysiCell].
 
-::: {.mdframed}
-:::
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6122,12 +5718,8 @@ Further details on the *biology* of this model (including details the
 placement of daughter cells and changes in cell volume) and reference
 parameter values can be found in [@ref:PhysiCell].
 
-::: {.mdframed}
-:::
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6160,12 +5752,8 @@ Further details on the *biology* of this model (including details the
 placement of daughter cells and changes in cell volume) and reference
 parameter values can be found in [@ref:PhysiCell].
 
-::: {.mdframed}
-:::
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6203,12 +5791,8 @@ Further details on the *biology* of this model (including details the
 placement of daughter cells and changes in cell volume) and reference
 parameter values can be found in [@ref:PhysiCell].
 
-::: {.mdframed}
-:::
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6235,12 +5819,8 @@ Further details on the *biology* of this model (including details the
 placement of daughter cells and changes in cell volume) and reference
 parameter values can be found in [@ref:PhysiCell].
 
-::: {.mdframed}
-:::
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6271,12 +5851,8 @@ Further details on the *biology* of this model (including details on
 changes in cell volume) and reference parameter values can be found in
 [@ref:PhysiCell].
 
-::: {.mdframed}
-:::
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6306,12 +5882,8 @@ Further details on the *biology* of this model (including details on
 changes in cell volume) and reference parameter values can be found in
 [@ref:PhysiCell].
 
-::: {.mdframed}
-:::
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6326,9 +5898,7 @@ calcification (but the default rate parameter is zero). See Section
 more information on the `Volume` class in the `Phenotype`, and
 [@ref:PhysiCell] for the biological details of this model.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6348,9 +5918,7 @@ reference="sec:Mechanics"} for key cell mechanics phenotype parameters,
 and Section [9](#sec:Cells){reference-type="ref" reference="sec:Cells"}
 for more information on Cells and their member functions.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6431,9 +5999,7 @@ Section [17.1](#sec:Standard_Models:Cycle){reference-type="ref"
 reference="sec:Standard_Models:Cycle"} on standard cell cycle models.
 See [@ref:PhysiCell] for more on the biology of these models.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6491,9 +6057,7 @@ numbers:
                      << " vs " << probs[i] << std::endl;
         } 
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6537,9 +6101,7 @@ interdivision time.)
         return; 
     }
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6575,9 +6137,7 @@ stochastic (most biased) as the oxygenation increases.
         return; 
     }
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6657,9 +6217,7 @@ cells:
     Cell_Definition MCF7 = cell_defaults; 
     MCF7.custom_data.add_variable( "antigen", "dimensionless", 0.0 );
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6708,9 +6266,7 @@ oxygen values in the cell's `parameters`, and we use the cell's
        return; 
     }
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6776,9 +6332,7 @@ Or in a single cell:
 
     pCell->phenotype.cycle.sync_to_cycle_model( rgb_model ); 
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6802,9 +6356,7 @@ phase to the Red phase:
 
     rgb_model.phase_link(blue_index,red_index).arrest_function = fluid_arrest_function; 
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6840,9 +6392,7 @@ transition:
 
     rgb_model.phase_link(blue_index,red_index).exit_function = my_mutation_function; 
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6899,9 +6449,7 @@ Several features are planned for upcoming PhysiCell releases:
 
 15. We will introduce a standard library of simplified ECM functions.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6938,9 +6486,7 @@ To get the death rate $d$, we use a simple iterative fitting method
 `./documentation/matlab/tune_death_in_live_model`) to get
 $d \sim 0.00319 \textrm{ hr}^{-1}$.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6966,9 +6512,7 @@ need to fit $T_Q$. We use a simple iterative fitting method (see
 `./documentation/matlab/tune_Ki67_basic`) to get
 $T_Q \sim 4.59 \textrm{ hr}$.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -6995,9 +6539,7 @@ fit $T_Q$. We use a simple iterative fitting method (see
 `./documentation/matlab/tune_Ki67_advanced`) to get
 $T_Q \sim 3.62 \textrm{ hr}$ for this model. [@ref:Ki67_MCF10A].
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -7027,9 +6569,7 @@ to fit $T_{G0G1}$. We use a simple iterative fitting method (see
 `./documentation/matlab/tune_cytometry`) to get
 $T_{G0G1} \sim 5.15 \textrm{ hr}$ for this model. [@ref:Ki67_MCF10A].
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -7062,9 +6602,7 @@ to fit $T_{G0G1}$. We use a simple iterative fitting method (see
 `./documentation/matlab/tune_cytometry_separated`) to get
 $T_{G0G1} \sim 4.98 \textrm{ hr}$ for this model. [@ref:Ki67_MCF10A].
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
@@ -7081,9 +6619,7 @@ finds this software useful!
 Paul Macklin thanks the Chaste, CompuCell3D, COPASI, and Morpheus
 communities and developers for Open Source leadership and inspiration.
 
-::: {.center}
 
-------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 :::
