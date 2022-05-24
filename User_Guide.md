@@ -47,7 +47,7 @@ This will be further developed in future versions of PhysiCell.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 # Getting started: The Quickstart and your First Simulation {#sec:getting_started}
 
@@ -72,34 +72,34 @@ tickets and the PhysiCell blog.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 # Further resources for help {#sec:blog_and_help}
 
 The PhysiCell project posts tips and tutorials at its blog:
 
-::: {.center}
+
 <http://www.mathcancer.org/blog/physicell-tutorials/>
-:::
+
 
 Users are encouraged to frequently visit the blog for these tips. This
 user manual may be updated more frequently than PhysiCell. Please check
 the PhysiCell project website for updates:
 
-::: {.center}
+
 <http://PhysiCell.MathCancer.org>
-:::
+
 
 Lastly, users can support help tickets at SourceForge:
 
-::: {.center}
+
 <https://sourceforge.net/p/physicell/tickets/>
-:::
+
 
 
 
 ------------------------------------------------------------------------
-:::
+
 
 # Preparing your development environment  {#sec:preparing_environment}
 
@@ -128,7 +128,7 @@ installed by default.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## Special notes for OSX users {#sec:osx_setup_note}
 
@@ -155,7 +155,7 @@ for more details. Also, if you have compiler crashes, see the FAQ
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## Virtual Machine option 
 
@@ -182,7 +182,7 @@ download the latest PhysiCell version from inside your virtual machine.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## Suggested tutorials and resources
 
@@ -246,7 +246,7 @@ these skillsets, we recommend the following resources:
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### C++ references
 
@@ -270,7 +270,7 @@ The following websites are good references for `C++`:
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Matlab tutorials
 
@@ -300,7 +300,7 @@ If you use Matlab for visualization and/or postprocessing, we recommend:
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### VirtualBox and related information (virtual appliances)
 
@@ -335,7 +335,7 @@ resources:
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Recommended additional tools
 
@@ -380,7 +380,7 @@ postprocessing and visualization:
 
 
 ------------------------------------------------------------------------
-:::
+
 
 # Overall codebase structure 
 
@@ -476,7 +476,7 @@ reference="sec:XML_PhysiCell_structure"}.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 # Using project templates  {#sec:templates}
 
@@ -559,7 +559,7 @@ reference="sec:blog_and_help"}.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 # Using the Sample Projects {#sec:sample_projects}
 
@@ -647,7 +647,7 @@ Here are the sample projects included as of Version 1.2.2:
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## Extra makefile rules {#sec:makefiles}
 
@@ -672,7 +672,7 @@ To get a list of all sample projects:
 
 
 ------------------------------------------------------------------------
-:::
+
 
 # The BioFVM microenvironment {#sec:BioFVM}
 
@@ -5438,7 +5438,7 @@ etc.) are as expected.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Person metadata
 
@@ -5464,7 +5464,7 @@ etc.) are as expected.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## SVG options  {#sec:SVG_options}
 
@@ -5498,7 +5498,7 @@ is 200 $\mu\textrm{m}$ tall.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## PhysiCell Constants  {#sec:PhysiCell_constants}
 
@@ -5611,7 +5611,7 @@ cycle models 100 or greater indicate dead cells.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## User Parameters {#sec:global_user_parameters}
 
@@ -5623,7 +5623,7 @@ reference="sec:XML_user_parameters"}, PhysiCell has a global
 
 
 ------------------------------------------------------------------------
-:::
+
 
 # Standard models  {#sec:Standard_Models}
 
@@ -5656,7 +5656,7 @@ parameter values can be found in [@ref:PhysiCell].
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Ki-67 Basic (`Ki67_basic`) (Code: `PhysiCell_constants::basic_Ki67_cycle_model`) {#sec:Standard_Models:Ki67_Basic}
 
@@ -5685,7 +5685,7 @@ parameter values can be found in [@ref:PhysiCell].
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Ki-67 Advanced (`Ki67_advanced`) (code: `PhysiCell_constants::advanced_Ki67_cycle_model`) {#sec:Standard_Models:Ki67_Advanced}
 
@@ -5720,7 +5720,7 @@ parameter values can be found in [@ref:PhysiCell].
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Flow Cytometry (`flow_cytometry_cycle_model`) (code: `PhysiCell_constants::flow_cytometry_cycle_model`) {#sec:Standard_Models:Flow_Cytometry}
 
@@ -5754,7 +5754,7 @@ parameter values can be found in [@ref:PhysiCell].
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Flow Cytometry Separated (`flow_cytometry_separated_cycle_model`) (code: `PhysiCell_constants::flow_cytometry_separated_cycle_model`) {#sec:Standard_Models:Flow_Cytometry_Separated}
 
@@ -5793,7 +5793,7 @@ parameter values can be found in [@ref:PhysiCell].
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Cycling-Quiescent (`cycling_quiescent`) (Code: `PhysiCell_constants::cycling_quiescent_model`) {#sec:Standard_Models:cycling_quiescent}
 
@@ -5821,7 +5821,7 @@ parameter values can be found in [@ref:PhysiCell].
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## Death Cycle Models {#sec:Standard_Models:Death}
 
@@ -5853,7 +5853,7 @@ changes in cell volume) and reference parameter values can be found in
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Necrosis (`necrosis`) (code: `PhysiCell_constants::necrosis_death_model`) {#sec:Standard_Models:Necrosis}
 
@@ -5884,7 +5884,7 @@ changes in cell volume) and reference parameter values can be found in
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## Volume model (`standard_volume_update_function`) {#sec:Standard_Models:Volume}
 
@@ -5899,7 +5899,7 @@ more information on the `Volume` class in the `Phenotype`, and
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## Cell velocity model (`standard_update_cell_velocity`) {#sec:Standard_Models:Velocity}
 
@@ -5919,7 +5919,7 @@ for more information on Cells and their member functions.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## Up orientation model (`up_orientation`) {#sec:Standard_Models:Orientation}
 
@@ -6000,7 +6000,7 @@ See [@ref:PhysiCell] for more on the biology of these models.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 # Functions for Random Events {#sec:random_functions}
 
@@ -6058,7 +6058,7 @@ numbers:
 
 
 ------------------------------------------------------------------------
-:::
+
 
 # Examples {#sec:Examples}
 
@@ -6102,7 +6102,7 @@ interdivision time.)
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Example: a custom migration bias {#sec:Examples:migration}
 
@@ -6138,7 +6138,7 @@ stochastic (most biased) as the oxygenation increases.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Example: a custom cell rule {#sec:Examples:custom_rule}
 
@@ -6218,7 +6218,7 @@ cells:
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Example: a custom phenotype update function {#sec:Examples:phenotype_rule}
 
@@ -6267,7 +6267,7 @@ oxygen values in the cell's `parameters`, and we use the cell's
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Example: a custom velocity update function
 
@@ -6333,7 +6333,7 @@ Or in a single cell:
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Adding an arrest function {#sec:Examples:arrest}
 
@@ -6357,7 +6357,7 @@ phase to the Red phase:
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ### Adding a custom phase entry function {#sec:Examples:phase_entry}
 
@@ -6393,7 +6393,7 @@ transition:
 
 
 ------------------------------------------------------------------------
-:::
+
 
 # Future {#sec:Future_Plans}
 
@@ -6450,7 +6450,7 @@ Several features are planned for upcoming PhysiCell releases:
 
 
 ------------------------------------------------------------------------
-:::
+
 
 # Some notes on parameter values
 
@@ -6487,7 +6487,7 @@ $d \sim 0.00319 \textrm{ hr}^{-1}$.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## Ki67 Basic model {#sec:parameters:Ki67_basic}
 
@@ -6513,7 +6513,7 @@ $T_Q \sim 4.59 \textrm{ hr}$.
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## Ki67 Advanced model {#sec:parameters:Ki67_advanced}
 
@@ -6540,7 +6540,7 @@ $T_Q \sim 3.62 \textrm{ hr}$ for this model. [@ref:Ki67_MCF10A].
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## Flow Cytometry model {#sec:parameters:flow_cytometry}
 
@@ -6570,7 +6570,7 @@ $T_{G0G1} \sim 5.15 \textrm{ hr}$ for this model. [@ref:Ki67_MCF10A].
 
 
 ------------------------------------------------------------------------
-:::
+
 
 ## Separated Flow Cytometry model {#sec:parameters:flow_cytometry_separated}
 
@@ -6603,7 +6603,7 @@ $T_{G0G1} \sim 4.98 \textrm{ hr}$ for this model. [@ref:Ki67_MCF10A].
 
 
 ------------------------------------------------------------------------
-:::
+
 
 # Acknowledgements
 
@@ -6620,4 +6620,4 @@ communities and developers for Open Source leadership and inspiration.
 
 
 ------------------------------------------------------------------------
-:::
+
