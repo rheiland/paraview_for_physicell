@@ -7,10 +7,9 @@ Wherever possible, it will demonstrate with specific examples. Please
 note that this guide will be periodically updated. Users should check
 [PhysiCell.MathCancer.org](http://PhysiCell.MathCancer.org) for the
 latest version. The PhysiCell method paper was published in PLoS
-Computational Biology [@ref:PhysiCell].\
-\
-If you use PhysiCell, please cite it as:\
-\
+Computational Biology [@ref:PhysiCell].
+
+If you use PhysiCell, please cite it as:
 
 We implemented and solved our model using PhysiCell (Version 1.7.1)
 \[1\].\
@@ -668,7 +667,6 @@ populate another):
 To get a list of all sample projects:
 
 `make list-projects`
-
 
 
 ------------------------------------------------------------------------
