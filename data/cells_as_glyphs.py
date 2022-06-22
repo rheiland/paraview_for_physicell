@@ -20,7 +20,8 @@ from vtk import *
 #     vtkRenderer
 # )
 
-from pyMCDS_cells import pyMCDS_cells
+#from pyMCDS_cells import pyMCDS_cells
+from pyMCDS import pyMCDS
 from vtk.util import numpy_support
 import numpy as np
 import random
@@ -32,7 +33,8 @@ def main():
         sys.exit(1)
     fname = sys.argv[1]
     # mcds = pyMCDS_cells('output00000032.xml', '.')  
-    mcds = pyMCDS_cells(fname, '.')  
+    # mcds = pyMCDS_cells(fname, '.')  
+    mcds = pyMCDS(fname, '.')  
     print('time=', mcds.get_time())
 
     print(mcds.data['discrete_cells'].keys())
